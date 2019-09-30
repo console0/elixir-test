@@ -22,5 +22,5 @@ phases:
 
 artifacts:
   files:
-    - _build/**/*
+    - release.tgz
   discard-paths: no
