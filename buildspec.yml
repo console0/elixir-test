@@ -19,6 +19,7 @@ phases:
   post_build:
     commands:
       - tar zcvf release.tgz _build appspec.yml
+      - rm -rf _build
 
 artifacts:
   files:
