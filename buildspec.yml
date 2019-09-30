@@ -21,13 +21,6 @@ phases:
 
 artifacts:
   files:
-    - distillery_example.tar.gz
+    - _build/*
     - appspec.yml
-    - templates/infra.yml
-    - templates/production.conf
-    - bin/unpack
-    - bin/stop
-    - bin/migrate
-    - bin/start
-    - bin/healthz
-  discard-paths: no
+  discard-paths: yes
