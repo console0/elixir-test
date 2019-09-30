@@ -9,17 +9,15 @@ phases:
     commands:
       - mix local.hex --force
       - mix deps.get
-      - mix compile 
-      - mix distillery.release
   pre_build:
     commands:
-      - bin/build pre_build
+      - mix compile 
+      - mix test
   build:
     commands:
-      - bin/build build
+      - mix distillery.release
   post_build:
     commands:
-      - bin/build post_build
 
 artifacts:
   files:
