@@ -21,6 +21,5 @@ phases:
 
 artifacts:
   files:
-    - _build/*
-    - appspec.yml
+    - mix.exs
   discard-paths: yes
