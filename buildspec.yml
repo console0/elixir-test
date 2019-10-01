@@ -9,6 +9,7 @@ phases:
     commands:
       - mix local.hex --force
       - mix deps.get
+      - chmod 755 bin/export
   pre_build:
     commands:
       - mix compile 
@@ -18,10 +19,9 @@ phases:
       - mix distillery.release
   post_build:
     commands:
-      - tar zcf release.tgz _build appspec.yml
-      - rm -rf _build
+      - bin/export
 
 artifacts:
   files:
-    - release.tgz
+    - *.tgz
   discard-paths: no
