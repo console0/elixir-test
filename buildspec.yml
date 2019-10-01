@@ -23,5 +23,5 @@ phases:
 
 artifacts:
   files:
-    - *.tgz
+    - '*.tgz'
   discard-paths: no
