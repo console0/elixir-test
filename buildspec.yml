@@ -23,5 +23,7 @@ phases:
 
 artifacts:
   files:
-    - '*.tgz'
+    - release.tgz
+  name:
+    - elixir-test-$(mix app.version | tail -1)
   discard-paths: no
