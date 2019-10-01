@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 VERSION=`mix app.version | tail -1`
-tar zcf $VERSION.tgz _build appspec.yml
+tar zcf release.tgz _build appspec.yml
 rm -rf _build

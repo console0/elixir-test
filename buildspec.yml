@@ -19,7 +19,8 @@ phases:
       - mix distillery.release
   post_build:
     commands:
-      - bin/export
+      - tar zcf release.tgz _build appspec.yml
+      - rm -rf _build
 
 artifacts:
   files:
